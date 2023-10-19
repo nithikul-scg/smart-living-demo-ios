@@ -5,7 +5,12 @@ source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/tuya/tuya-pod-specs.git'
 
 def default_pods
+#  pod 'SmartLivingSDK', :path => './smart-living-sdk-ios'
   pod 'SmartLivingSDK', :path => '../smart-living-app-v2-ios/smart-living-sdk-ios'
+  pod "ThingSmartCryption", :path =>'./ios_core_sdk'
+  # pod "ThingSmartHomeKit", "~> 5.1.0"
+  # pod 'ThingSmartCryption', :path => './'
+  pod 'Wormholy'
 end
 
 target 'SDKDemoApp' do

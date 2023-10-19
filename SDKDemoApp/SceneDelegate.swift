@@ -14,8 +14,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
     
     // MARK: [START] Configuration
-    private let tuyaAppKey = "kqmkt7hwdjmk7ck8dgjr"
-    private let tuyaSecretKey = "y5c77x8kd7qv8t4kwrqjswsuaxyh8jf3"
+    private let tuyaAppKey = "pvnautmdek3qxrhsgs5f"
+    private let tuyaSecretKey = "tg3c849uacpkvcharakvhqayghkrsqyc"
     // MARK: [END] Configuration
     
 
