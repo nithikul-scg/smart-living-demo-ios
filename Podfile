@@ -1,15 +1,12 @@
 
 platform :ios, '14.0'
 source 'https://github.com/CocoaPods/Specs.git'
-#source 'https://github.com/TuyaInc/TuyaPublicSpecs.git'
-source 'https://github.com/tuya/tuya-pod-specs.git'
+#source 'https://github.com/tuya/tuya-pod-specs.git'
+source 'git@github.com:tuya/tuya-private-specs.git'
 
 def default_pods
-#  pod 'SmartLivingSDK', :path => './smart-living-sdk-ios'
   pod 'SmartLivingSDK', :path => '../smart-living-app-v2-ios/smart-living-sdk-ios'
   pod "ThingSmartCryption", :path =>'./ios_core_sdk'
-  # pod "ThingSmartHomeKit", "~> 5.1.0"
-  # pod 'ThingSmartCryption', :path => './'
   pod 'Wormholy'
 end
 
