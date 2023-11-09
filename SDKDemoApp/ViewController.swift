@@ -8,7 +8,7 @@
 import UIKit
 import SmartLivingSDK
 
-class ViewController: UIViewController, SCGAccountDelegate {
+class ViewController: UIViewController {
     private let button: UIButton = {
        let button = UIButton()
         button.setTitle("open SDK", for: .normal)
@@ -30,7 +30,6 @@ class ViewController: UIViewController, SCGAccountDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         view.backgroundColor = .white
-        SCGAccount.sharedInstance.delegate = self
         setupViews()
         showButton()
     }
@@ -62,12 +61,6 @@ class ViewController: UIViewController, SCGAccountDelegate {
         // However, since we don't have a logout function in the SDK,
         // in this example, we will log out before starting to present the SDK.
         button.setTitle("Opening SDK ...", for: .normal)
-        SCGAccount.sharedInstance.logout()
-    }
-
-    func didLogout() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            SCGSmartLivingApp.shared?.presentSmartLivingApp()
-        }
+        SCGSmartLivingApp.shared?.presentSmartLivingApp()
     }
 }

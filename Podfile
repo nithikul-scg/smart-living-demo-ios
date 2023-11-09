@@ -6,6 +6,7 @@ source 'https://github.com/tuya/tuya-pod-specs.git'
 
 def default_pods
   pod 'SmartLivingSDK', :path => '../smart-living-app-v2-ios/smart-living-sdk-ios'
+  pod 'Wormholy'
 end
 
 target 'SDKDemoApp' do
